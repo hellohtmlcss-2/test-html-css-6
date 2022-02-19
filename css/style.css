@@ -137,13 +137,24 @@ body {
     margin: 0 0 102px;
 }
 
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-item:nth-of-type(n+4) {
+    margin: 30px 0 0;
+}
+
 .service-item-link {
     background-image: url(../img/services-bkg.jpg);
     background-size: cover;
     text-decoration: none;
     width: 350px;
     min-height: 360px;
-    display: block;
+    display: flex;
+    align-items: flex-end;
     padding: 45px;
     box-sizing: border-box;
 }
@@ -308,6 +319,12 @@ body {
     padding: 85px 0 92px;
 }
 
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .clients-subtitle {
     margin: 0 0 43px;
 }
@@ -317,8 +334,27 @@ body {
     padding: 102px 0 116px;
 }
 
+.advantage-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage-item {
+    width: 348px;
+    min-height: 316px;
+    padding: 80px 0 37px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.advantage-img {
+    margin: 0 0 20px;
+}
+
 .advantage-subtitle {
-    margin: 0 0 103px;
+    margin: 0 0 27px;
 }
 
 .advantage-desc {
@@ -342,6 +378,7 @@ body {
 }
 
 .footer-questions {
+    width: 410px;
     margin: 0 0 80px;
 }
 
@@ -367,4 +404,6 @@ body {
 
 .footer-about {
     padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
 }
