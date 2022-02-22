@@ -220,9 +220,11 @@ body {
     margin: 0 0 0 35px;
 }
 
-.review-button {
+.default-button {
     min-height: 60px;
     width: 270px;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 .review-controls {
@@ -386,6 +388,59 @@ body {
     color: #FFF;
 }
 
+.form-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 0 15px;
+}
+
+.form-input-wrp {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 35px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    padding: 0 0 15px;
+    width: 255px;
+    font-family: inherit;
+    font-size: 21px;
+    line-height: 29px;
+    color: #FFF;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #BDBDBD;
+}
+
+textarea {
+    resize: none;
+    display: block;
+    margin: 0 0 50px;
+    background-color: transparent;
+    width: 540px;
+    height: 105px;
+    padding: 0 0 15px;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 21px;
+    line-height: 29px;
+    color: #FFF;
+}
+
+.form-button {
+    display: block;
+    margin: 0 0 0 auto;
+}
+
 .footer-contact-text {
     font-size: 21px;
     line-height: 29px;
@@ -407,3 +462,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+/* .popup textarea {
+
+} */

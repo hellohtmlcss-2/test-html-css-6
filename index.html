@@ -153,7 +153,7 @@
                     <h2 class="section-title">Отзывы</h2>
                     <p class="section-sub-title">Ваши благодарности</p>
                 </div>
-            <button class="button review-button" type="button">Оставить отзыв</button>
+            <button class="button default-button" type="button">Оставить отзыв</button>
             </div>
             <ul class="review-list">
                 <li class="review-item">
@@ -231,8 +231,23 @@
                         </ul>
                     </div>
                     <div class="half-width wrp-padding">
-                        форма
-                        <button class="button">Отправить сообщение</button>
+                        <form action="#">
+                            <div class="form-input-wrp">
+                                <label>
+                                    <span class="form-label">Имя</span>
+                                    <input type="text" placeholder="Иван" required>
+                                </label>
+                                <label>
+                                    <span class="form-label">Телефон</span>
+                                    <input type="tel" placeholder="+7-999-999-99-99" required>    
+                                </label>
+                            </div>
+                            <label>
+                                <span class="form-label">Сообщение</span>
+                                <textarea placeholder="Ваше сообщение" required></textarea>
+                            </label>    
+                            <button type="submit" class="button default-button form-button">Отправить сообщение</button>
+                        </form>    
                     </div>
                 </div>
             </div>
@@ -242,7 +257,7 @@
             <p class="footer-text">Разработано: BuhOne</p>
         </div>
     </footer>
-    <div>попап</div>
+    <div class="popup">попап</div>
 </body>
 
 </html>
