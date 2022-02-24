@@ -174,6 +174,8 @@ body {
     line-height: inherit;
     background-color: #005FA3;
     border: none;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .review-title-wrp {
@@ -227,7 +229,7 @@ body {
 
 .review-controls {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .review-slider-button {
@@ -384,6 +386,61 @@ body {
 
 .white {
     color: #FFF;
+}
+
+.form-contact-wrp {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 35px;
+}
+
+.input-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 0 15px;
+}
+
+input {
+    width: 255px;
+    padding: 4px 0 15px;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #FFF;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color:#BDBDBD;
+}
+
+textarea {
+    padding: 4px 0 15px;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    background-color: transparent;
+    width: 100%;
+    min-height: 105px;
+    box-sizing: border-box;
+    margin: 0 0 50px;
+    font-family: inherit;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #FFF;
+}
+
+.form-button {
+    display: block;
+    width: 270px;
+    min-height: 60px; 
+    margin: 0 0 0 auto;
 }
 
 .footer-contact-text {
